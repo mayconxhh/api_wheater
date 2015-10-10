@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>Api Weather</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="Api">
+	<h1>
+		 Api Weather
+	</h1>
+	<h2>
+		Learn to create the world of the web
+	</h2>
+</header>
+<div class="loader">Geolocalizando tu posicion, porfavor espere :)</div>
+<form action="" class="search">
+	<input type="text" date-input="cityAdd" class="search__text" placeholder="Agregar una nueva cuidad">
+	<input type="submit" date-button="add" class="search_btn btn" value="Añadir una nueva ciudad">
+	<button type="submit" data-save-cities class="search__btn btn">Ver cuidades guardadas</button>
+
+</form>
+<main class="Main">
+	<template id="Main__template">
+		<div class="Main__box">
+			<header class="Main__header">
+				<h3 data-city class="Main__title"></h3>
+				<h4 data-time class="Main__time"></h4>
+			</header>
+			<div class="Main__info">
+				<img data-icon src="" alt="" class="Main__image">
+				<span data-temp="max" class="Main__max"></span>
+				<span data-temp="min" class="Main__min"></span>
+				<span data-temp="current" class="Main__temp"></span>
+			</div>
+		</div>
+	</template>
+</main>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
