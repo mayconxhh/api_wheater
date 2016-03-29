@@ -20,7 +20,8 @@ input[type="submit"] {
 * Botones
 */
 .btn {
-    display : inline-block;
+    width: 95%;
+    display : block;
     line-height : 1;
     color : white;
     text-align : center;
@@ -31,8 +32,8 @@ input[type="submit"] {
     border : none;
     font-weight: bold;
     cursor : pointer;
-    margin: 0;
-    margin-left: 1px;
+    margin: .5em auto;
+    /*margin-left: 1px;   */
     padding: 1em;
     border-radius: 1px;
 }
@@ -72,17 +73,15 @@ input[type="submit"] {
 * Módulo .search
 */
 .search {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
     padding: 0;
     font-size: 3rem;
 }
 
     .search__text {
-        width: 75%;
+        margin-bottom: .5em;
+        display:  block;
+        width: 95%;
+        margin: 0 auto .5em auto;
         font-size: 1rem;
     }
 
@@ -188,3 +187,25 @@ input[type="submit"] {
    text-align: center;
    padding: 1em;
  }
+
+
+@media (min-width: 600px){
+    .search {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+        .search__text {
+            width: 75%;
+            display: inline-block;
+            margin-bottom:  0;
+        }
+        .btn{
+            width: inherit;
+            display: block;
+            margin: 0;
+            margin-left: 1px;
+        }
+}
